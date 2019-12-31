@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Description
+
+VK.com photos (last 10 years) grouped by year.
+
 ## Available Scripts
 
 In the project directory, you can run:
