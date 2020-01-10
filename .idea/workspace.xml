@@ -12,6 +12,20 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -29,6 +43,12 @@
   <component name="JiraServerManager">
     <selected>-1</selected>
     <servers />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1Vh3ziUCqHQRm28BCqa7j6wU1gk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -50,7 +70,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -60,7 +80,17 @@
       <recent name="$PROJECT_DIR$/../rr-example-app/src/containers" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.eslint (1)">
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/../rr-example-app/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="eslint (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/../rr-example-app/package.json" />
       <command value="run" />
@@ -101,23 +131,13 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.eslint (1)" />
         <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.eslint" />
         <item itemvalue="npm.precommit" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +164,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577691763265</updated>
       <workItem from="1577691765539" duration="878000" />
-      <workItem from="1577692998398" duration="37392000" />
+      <workItem from="1577692998398" duration="38441000" />
     </task>
     <servers />
   </component>
@@ -160,26 +180,26 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1577781910413" />
-    <state width="1874" height="551" key="GridCell.Tab.0.bottom" timestamp="1578640588428">
+    <state width="1874" height="187" key="GridCell.Tab.0.bottom" timestamp="1578641730289">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="551" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1578640588428" />
-    <state width="1874" height="551" key="GridCell.Tab.0.center" timestamp="1578640588428">
+    <state width="1874" height="187" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1578641730289" />
+    <state width="1874" height="187" key="GridCell.Tab.0.center" timestamp="1578641730289">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="551" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1578640588428" />
-    <state width="1874" height="551" key="GridCell.Tab.0.left" timestamp="1578640588428">
+    <state width="1874" height="187" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1578641730289" />
+    <state width="1874" height="187" key="GridCell.Tab.0.left" timestamp="1578641730288">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="551" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1578640588428" />
-    <state width="1874" height="551" key="GridCell.Tab.0.right" timestamp="1578640588428">
+    <state width="1874" height="187" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1578641730288" />
+    <state width="1874" height="187" key="GridCell.Tab.0.right" timestamp="1578641730289">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="551" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1578640588428" />
-    <state x="449" y="175" width="1022" height="737" key="SettingsEditor" timestamp="1577708015452">
+    <state width="1874" height="187" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1578641730289" />
+    <state x="449" y="175" width="1022" height="737" key="SettingsEditor" timestamp="1578641232974">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="449" y="175" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1577708015452" />
+    <state x="449" y="175" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1578641232974" />
     <state x="100" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1577708648809">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

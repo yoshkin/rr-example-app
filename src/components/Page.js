@@ -33,7 +33,7 @@ export class Page extends React.Component {
 
   render() {
     const { year, photos } = this.props
-    console.log('<Page/> render')
+    // console.log('<Page/> render');
     return (
       <div className="ib page">
         <p>{this.renderButtons()}</p>

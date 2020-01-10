@@ -29,7 +29,7 @@ export class User extends React.Component {
   }
 
   render() {
-    console.log('<User/> render')
+    // console.log('<User/> render');
     return <div className="ib user">{this.renderTemplate()}</div>
   }
 }

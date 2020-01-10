@@ -13,8 +13,8 @@ class UserContainer extends React.Component {
       getPhotos(year)
     }
     handleLogin(successCallback)
-    console.log('test')
   }
+
   checkLogin = () => {
     const { checkLogin } = this.props
     checkLogin()
