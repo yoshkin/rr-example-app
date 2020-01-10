@@ -9,14 +9,12 @@ export function handleLogin(callback) {
     //eslint-disable-next-line no-undef
     VK.Auth.login(r => {
       if (r.session) {
-        console.log(r.session)
-        let username = r.session.user.first_name
+        const username = r.session.user.first_name
 
         dispatch({
           type: types.LOGIN_SUCCESS,
           payload: username,
         })
-        localStorage.setItem('login', `${username}`)
         callback()
       } else {
         dispatch({
@@ -26,5 +24,29 @@ export function handleLogin(callback) {
         })
       }
     }, 4) // запрос прав на доступ к photo
+  }
+}
+
+export function checkLogin() {
+  return function(dispatch) {
+    dispatch({
+      type: types.LOGIN_CHECK,
+    })
+
+    //eslint-disable-next-line no-undef
+    VK.Auth.getLoginStatus(r => {
+      if (r.session) {
+        const username = r.session.user.first_name
+        dispatch({
+          type: types.LOGIN_SUCCESS,
+          payload: username,
+        })
+      } else {
+        dispatch({
+          type: types.LOGIN_NEEDED,
+          payload: '',
+        })
+      }
+    }, 4)
   }
 }

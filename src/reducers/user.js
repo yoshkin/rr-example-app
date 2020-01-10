@@ -11,6 +11,13 @@ export function userReducer(state = initialState, action) {
   switch (action.type) {
     case types.LOGIN_REQUEST:
       return { ...state, isFetching: true, error: '', isLogged: false }
+    case types.LOGIN_CHECK:
+      return {
+        ...state,
+        isFetching: true,
+        error: '',
+        isLogged: false,
+      }
     case types.LOGIN_SUCCESS:
       return {
         ...state,
@@ -23,6 +30,13 @@ export function userReducer(state = initialState, action) {
         ...state,
         isFetching: false,
         error: action.payload.message,
+        isLogged: false,
+      }
+    case types.LOGIN_NEEDED:
+      return {
+        ...state,
+        isFetching: false,
+        name: action.payload,
         isLogged: false,
       }
     default:

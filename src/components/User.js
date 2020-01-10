@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 export class User extends React.Component {
+  componentDidMount() {
+    this.props.isLogged()
+  }
+
   renderTemplate = () => {
-    const login = localStorage.getItem('login')
     const { name, error, isFetching } = this.props
 
-    if (login) {
-      return <p>Привет, {login}!</p>
-    }
     if (error) {
       return <p>Во время запроса произошла ошибка, обновите страницу</p>
     }
@@ -39,4 +39,5 @@ User.propTypes = {
   error: PropTypes.string,
   isFetching: PropTypes.bool.isRequired,
   handleLogin: PropTypes.func.isRequired,
+  isLogged: PropTypes.func.isRequired,
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { User } from '../components/User'
-import { handleLogin } from '../actions/UserActions'
+import { handleLogin, checkLogin } from '../actions/UserActions'
 import { getPhotos } from '../actions/PageActions'
 import { getCurrentYear } from '../utils/date'
 
@@ -13,6 +13,11 @@ class UserContainer extends React.Component {
       getPhotos(year)
     }
     handleLogin(successCallback)
+    console.log('test')
+  }
+  checkLogin = () => {
+    const { checkLogin } = this.props
+    checkLogin()
   }
 
   render() {
@@ -22,7 +27,7 @@ class UserContainer extends React.Component {
         name={user.name}
         error={user.error}
         isFetching={user.isFetching}
-        isLogged={user.isLogged}
+        isLogged={this.checkLogin}
         handleLogin={this.handleLogin}
       />
     )
@@ -39,6 +44,7 @@ const mapDispatchToProps = dispatch => {
   return {
     handleLogin: successCallback => dispatch(handleLogin(successCallback)),
     getPhotos: year => dispatch(getPhotos(year)),
+    checkLogin: () => dispatch(checkLogin()),
   }
 }
 
