@@ -1,5 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+(updated 10.01.2020)
 ## Description
 
 VK.com photos (last 10 years) grouped by year.
